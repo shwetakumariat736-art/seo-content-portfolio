@@ -4,174 +4,666 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore Shweta's SEO content writing, keyword research, blog writing and digital marketing portfolio.">
-  <title>Write With Shweta | SEO & Content Writing</title>
+  <meta name="description" content="Shweta Kumari - SEO Content Writer, Website Content Specialist and LinkedIn Personal Branding Strategist.">
+  <title>Write With Shweta | Learn. Write. Grow.</title>
+
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
+
     :root {
       --green: #168447;
       --dark: #17251d;
-      --muted: #647067;
-      --light: #f5f8f5;
+      --light: #f4f8f5;
+      --gray: #657168;
+      --white: #fff;
     }
+
+    html { scroll-behavior: smooth; }
+
     body {
       font-family: Arial, Helvetica, sans-serif;
       color: var(--dark);
-      line-height: 1.7;
-      background: #fff;
+      line-height: 1.8;
     }
-    a { color: inherit; text-decoration: none; }
-    .wrap { width: min(1080px, 90%); margin: auto; }
-    header { padding: 22px 0; border-bottom: 1px solid #e8eee8; }
-    nav { display: flex; justify-content: space-between; align-items: center; gap: 18px; }
-    .logo { font-size: 22px; font-weight: 800; }
+
+    a { text-decoration: none; color: inherit; }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    header {
+      background: white;
+      border-bottom: 1px solid #e4eae5;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding: 18px 0;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+
     .logo span, .green { color: var(--green); }
-    .navlinks { display: flex; gap: 22px; font-size: 14px; flex-wrap: wrap; }
-    .hero { padding: 90px 0 75px; background: var(--light); }
-    .tag { color: var(--green); font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
-    h1 { font-size: clamp(38px, 6vw, 66px); line-height: 1.12; margin: 20px 0; letter-spacing: -2px; }
-    .hero p { max-width: 650px; color: var(--muted); font-size: 18px; }
-    .buttons { display: flex; gap: 14px; margin-top: 28px; flex-wrap: wrap; }
-    .btn { padding: 12px 22px; border-radius: 7px; font-weight: 700; display: inline-block; }
-    .primary { background: var(--green); color: white; }
-    .secondary { border: 1px solid #ccd8ce; background: white; }
-    section { padding: 68px 0; }
-    h2 { font-size: 32px; margin-bottom: 12px; }
-    .intro { color: var(--muted); margin-bottom: 28px; }
-    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-    .card { padding: 25px; border: 1px solid #e4eae4; border-radius: 12px; background: white; }
-    .card h3 { font-size: 19px; margin: 12px 0 8px; }
-    .card p { color: var(--muted); font-size: 15px; }
-    .symbol { font-size: 27px; }
-    .work { background: var(--light); }
-    .label { display: inline-block; color: var(--green); background: #e8f5eb; padding: 4px 9px; border-radius: 5px; font-size: 12px; font-weight: 700; }
-    .skills { display: flex; flex-wrap: wrap; gap: 10px; }
-    .skills span { padding: 9px 14px; border: 1px solid #dce5dc; border-radius: 20px; font-size: 14px; }
-    .contact { background: var(--dark); color: white; text-align: center; }
-    .contact p { color: #d3ded5; max-width: 580px; margin: 12px auto 25px; }
-    footer { padding: 22px 0; text-align: center; font-size: 13px; color: var(--muted); }
-    @media (max-width: 700px) {
-      .navlinks { gap: 10px; }
-      .grid { grid-template-columns: 1fr; }
-      .hero { padding: 60px 0; }
-      section { padding: 48px 0; }
-      h2 { font-size: 27px; }
+
+    .navlinks {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .navlinks a:hover { color: var(--green); }
+
+    .hero {
+      background: var(--light);
+      padding: 100px 0;
+    }
+
+    .tag {
+      color: var(--green);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(40px, 6vw, 68px);
+      line-height: 1.15;
+      margin: 18px 0;
+    }
+
+    h2 {
+      font-size: clamp(28px, 4vw, 38px);
+      line-height: 1.3;
+      margin: 12px 0 18px;
+    }
+
+    h3 { line-height: 1.4; }
+
+    .hero p, .intro {
+      color: var(--gray);
+      font-size: 18px;
+      max-width: 750px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 7px;
+      font-weight: bold;
+    }
+
+    .primary {
+      background: var(--green);
+      color: white;
+    }
+
+    .primary:hover { background: #0e6334; }
+
+    .secondary {
+      border: 1px solid #ccd9ce;
+      background: white;
+    }
+
+    section { padding: 75px 0; }
+
+    .story { max-width: 850px; }
+
+    .story p {
+      color: #48544b;
+      margin-bottom: 17px;
+    }
+
+    .highlight {
+      background: var(--light);
+      border-left: 4px solid var(--green);
+      padding: 22px;
+      margin: 25px 0;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .soft { background: var(--light); }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border: 1px solid #e1e9e2;
+      border-radius: 12px;
+    }
+
+    .card h3 {
+      margin: 12px 0;
+      font-size: 19px;
+    }
+
+    .card p {
+      color: var(--gray);
+      font-size: 15px;
+    }
+
+    .icon { font-size: 28px; }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .step {
+      border: 1px solid #e1e9e2;
+      padding: 18px;
+      border-radius: 10px;
+    }
+
+    .step strong { color: var(--green); }
+
+    .step p {
+      font-size: 14px;
+      color: var(--gray);
+    }
+
+    .linkedin-box {
+      margin-top: 30px;
+      padding: 30px;
+      border-radius: 14px;
+      background: #eaf5ed;
+    }
+
+    .linkedin-box p {
+      color: var(--gray);
+      margin: 10px 0 20px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .skills span {
+      padding: 7px 13px;
+      border: 1px solid #dce5dc;
+      border-radius: 25px;
+      background: white;
+      font-size: 14px;
+    }
+
+    .contact {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+    }
+
+    .contact p {
+      max-width: 700px;
+      margin: 15px auto;
+      color: #d4ded6;
+    }
+
+    footer {
+      padding: 25px 0;
+      text-align: center;
+      color: var(--gray);
+      font-size: 14px;
+    }
+
+    footer a {
+      color: var(--green);
+      font-weight: bold;
+      margin: 0 8px;
+    }
+
+    @media (max-width: 800px) {
+      .grid { grid-template-columns: repeat(2, 1fr); }
+      .steps { grid-template-columns: repeat(2, 1fr); }
+      nav { align-items: flex-start; flex-direction: column; }
+    }
+
+    @media (max-width: 550px) {
+      .grid, .steps { grid-template-columns: 1fr; }
+      .hero { padding: 65px 0; }
+      section { padding: 50px 0; }
+      .navlinks { gap: 12px; }
     }
   </style>
 </head>
+
 <body>
-  <header>
-    <nav class="wrap">
-      <a class="logo" href="#">Write With <span>Shweta.</span></a>
-      <div class="navlinks">
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#work">Portfolio</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
-  </header>
 
-  <main>
-    <section class="hero">
-      <div class="wrap">
-        <div class="tag">SEO • Content • Digital Marketing</div>
-        <h1>Words that connect.<br><span class="green">Content that grows.</span></h1>
-        <p>Hi, I'm Shweta. I create helpful, reader-focused content and explore SEO strategies that help businesses communicate clearly and grow their online presence.</p>
+<header>
+  <nav class="container">
+    <a class="logo" href="#home">Write With <span>Shweta.</span></a>
+
+    <div class="navlinks">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#linkedin">LinkedIn</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HOME -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="tag">SEO · Content · Personal Branding</div>
+
+      <h1>
+        Words That Connect.<br>
+        <span class="green">Stories That Build Trust.</span>
+      </h1>
+
+      <p>
+        Hello, I'm Shweta Kumari. I help businesses and professionals
+        communicate their value through meaningful content, SEO writing,
+        and LinkedIn personal branding strategies.
+      </p>
+
+      <div class="buttons">
+        <a class="btn primary" href="#portfolio">Explore My Work</a>
+        <a class="btn secondary"
+           href="https://www.linkedin.com/in/shweta-kumari-6899551aa"
+           target="_blank" rel="noopener noreferrer">
+          Connect on LinkedIn ↗
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container story">
+      <div class="tag">My Story</div>
+      <h2>Hello, I'm Shweta Kumari.</h2>
+
+      <p class="intro">
+        Content writer with a background in Journalism and Mass Communication.
+        Passionate about words, people, and meaningful stories.
+      </p>
+
+      <p>
+        I believe every business has a story worth telling. Sometimes,
+        the challenge isn't having a great product or service. It's finding
+        the right words to explain why it matters.
+      </p>
+
+      <p>
+        Imagine building something valuable, putting your heart into your
+        work, and launching a website that doesn't explain your vision clearly.
+        A potential customer visits, feels confused, and leaves without
+        discovering the value you worked so hard to create.
+      </p>
+
+      <p>
+        <strong>That's where thoughtful content can make a difference.</strong>
+        The right words can turn confusion into clarity, answer questions,
+        build trust, and help people connect with a business.
+      </p>
+
+      <p>
+        My background in Journalism and Mass Communication has taught me
+        the importance of research, accuracy, curiosity, and presenting
+        information in a way people can understand.
+      </p>
+
+      <p>
+        I don't believe in writing just to fill a page. I believe in
+        understanding the audience, researching the topic, and creating
+        content that serves a real purpose.
+      </p>
+
+      <p>
+        For me, SEO writing isn't about adding keywords everywhere.
+        It's about understanding what people are searching for and
+        answering their questions with useful, reader-friendly content.
+      </p>
+
+      <p>
+        I also believe stories matter. People may forget a list of features,
+        but they often remember a story they can relate to. The right message
+        can help a brand feel more human and its value easier to understand.
+      </p>
+
+      <div class="highlight">
+        Your business has something valuable to say.
+        My role is to help you say it clearly, thoughtfully,
+        and in a way people remember.
+      </div>
+
+      <p>
+        I value clear communication, meeting deadlines, constructive feedback,
+        and understanding what each project truly needs. My aim is to create
+        content that supports the reader and the client's goals.
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="soft" id="services">
+    <div class="container">
+      <div class="tag">What I Do</div>
+      <h2>Content With a Clear Purpose.</h2>
+      <p class="intro">
+        Practical writing and content strategy designed around your audience,
+        message, and business goals.
+      </p>
+
+      <div class="grid">
+        <article class="card">
+          <div class="icon">✍️</div>
+          <h3>SEO Blog Writing</h3>
+          <p>
+            Engaging blogs and articles shaped around keyword research,
+            search intent, readability, and useful information.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="icon">🌐</div>
+          <h3>Website Content</h3>
+          <p>
+            Homepage, About Us, service pages, and website copy that
+            communicates your value clearly.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="icon">🔎</div>
+          <h3>SEO Research</h3>
+          <p>
+            Keyword research, competitor research, search-intent analysis,
+            content structure, and on-page optimization.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="icon">💼</div>
+          <h3>LinkedIn Personal Branding</h3>
+          <p>
+            Profile headline, About section, brand positioning, and messaging
+            that helps professionals communicate their expertise.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="icon">📅</div>
+          <h3>LinkedIn Content Strategy</h3>
+          <p>
+            Content pillars, post ideas, content calendars, storytelling,
+            and thought-leadership content planning.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="icon">💬</div>
+          <h3>Social Media Content</h3>
+          <p>
+            Captions, educational posts, brand stories, and audience-focused
+            content that keeps your message consistent.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- LINKEDIN BRANDING -->
+  <section id="linkedin">
+    <div class="container">
+      <div class="tag">LinkedIn Personal Branding</div>
+      <h2>Be Known for What You Know.</h2>
+
+      <p class="intro">
+        A strong LinkedIn presence is more than posting regularly.
+        It starts with knowing what you want to be known for,
+        who you want to reach, and what value you can offer.
+      </p>
+
+      <div class="grid">
+        <article class="card">
+          <div class="tag">01 · Positioning</div>
+          <h3>Define Your Brand</h3>
+          <p>
+            Clarify your audience, expertise, professional story,
+            profile messaging, and the ideas you want to be known for.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="tag">02 · Content</div>
+          <h3>Create Useful Content</h3>
+          <p>
+            Develop educational posts, lessons learned, personal stories,
+            industry insights, and thought-leadership ideas.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="tag">03 · Consistency</div>
+          <h3>Build a Practical Strategy</h3>
+          <p>
+            Plan content pillars, create a realistic posting calendar,
+            engage meaningfully, and learn from audience responses.
+          </p>
+        </article>
+      </div>
+
+      <div class="linkedin-box">
+        <h3>Follow My Work on LinkedIn</h3>
+        <p>
+          Connect with me for professional updates and read my
+          Write With Shweta newsletter for content insights,
+          writing lessons, SEO, and continuous learning.
+        </p>
+
         <div class="buttons">
-          <a class="btn primary" href="#work">Explore My Portfolio ↗</a>
-          <a class="btn secondary" href="#contact">Let's Connect</a>
+          <a class="btn primary"
+             href="https://www.linkedin.com/in/shweta-kumari-6899551aa"
+             target="_blank" rel="noopener noreferrer">
+            Visit My LinkedIn Profile ↗
+          </a>
+
+          <a class="btn secondary"
+             href="https://www.linkedin.com/newsletters/write-with-shweta-7489001167566561280/"
+             target="_blank" rel="noopener noreferrer">
+            Read My Newsletter ↗
+          </a>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="about">
-      <div class="wrap">
-        <h2>About Me</h2>
-        <p class="intro">Learn. Write. Grow.</p>
-        <p>I'm building my portfolio around SEO content writing, blog creation, keyword research and digital marketing. My goal is to make information useful, easy to understand and aligned with the reader's needs.</p>
+  <!-- PORTFOLIO -->
+  <section class="soft" id="portfolio">
+    <div class="container">
+      <div class="tag">My Work</div>
+      <h2>Portfolio & Writing Samples</h2>
+
+      <p class="intro">
+        A growing collection of writing and content strategy samples.
+        Add your completed articles and published work here as your portfolio
+        develops.
+      </p>
+
+      <div class="grid">
+        <article class="card">
+          <div class="tag">Writing Sample</div>
+          <h3>SEO-Friendly Blog Article</h3>
+          <p>
+            A blog sample demonstrating research, search intent,
+            clear headings, readability, and useful information.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="tag">SEO Research</div>
+          <h3>Keyword Research & Content Plan</h3>
+          <p>
+            A sample content plan showing how keyword themes can be
+            organized around audience needs and search intent.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="tag">LinkedIn Strategy</div>
+          <h3>Personal Branding Content Plan</h3>
+          <p>
+            A sample strategy covering profile positioning,
+            content pillars, storytelling, and a consistent posting plan.
+          </p>
+        </article>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="services" class="work">
-      <div class="wrap">
-        <h2>What I Can Help With</h2>
-        <p class="intro">Content and SEO support for your digital presence.</p>
-        <div class="grid">
-          <article class="card">
-            <div class="symbol">✍️</div>
-            <h3>Blog & Article Writing</h3>
-            <p>Clear, engaging articles structured around audience needs and search intent.</p>
-          </article>
-          <article class="card">
-            <div class="symbol">🔎</div>
-            <h3>SEO Research</h3>
-            <p>Keyword ideas, search intent analysis and content planning for relevant topics.</p>
-          </article>
-          <article class="card">
-            <div class="symbol">📈</div>
-            <h3>On-Page SEO</h3>
-            <p>Support with titles, meta descriptions, headings, internal links and content structure.</p>
-          </article>
+  <!-- PROCESS -->
+  <section>
+    <div class="container">
+      <div class="tag">My Approach</div>
+      <h2>Understand. Research. Write. Refine.</h2>
+
+      <div class="steps">
+        <div class="step">
+          <strong>STEP 01</strong>
+          <h3>Understand</h3>
+          <p>Learn about the business, audience, and goals.</p>
+        </div>
+
+        <div class="step">
+          <strong>STEP 02</strong>
+          <h3>Research</h3>
+          <p>Explore the topic, keywords, sources, and competitors.</p>
+        </div>
+
+        <div class="step">
+          <strong>STEP 03</strong>
+          <h3>Plan</h3>
+          <p>Organize ideas into a clear content structure.</p>
+        </div>
+
+        <div class="step">
+          <strong>STEP 04</strong>
+          <h3>Create</h3>
+          <p>Write and refine for clarity, accuracy, and SEO.</p>
+        </div>
+
+        <div class="step">
+          <strong>STEP 05</strong>
+          <h3>Improve</h3>
+          <p>Use feedback to improve the final content.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="work">
-      <div class="wrap">
-        <h2>Portfolio & Writing Samples</h2>
-        <p class="intro">These are sample project concepts. Replace them with your own completed work as you build your portfolio.</p>
-        <div class="grid">
-          <article class="card">
-            <span class="label">Sample project</span>
-            <h3>How to Build an SEO-Friendly Blog</h3>
-            <p>A proposed blog article covering search intent, useful headings, readability and on-page SEO basics.</p>
-          </article>
-          <article class="card">
-            <span class="label">Sample project</span>
-            <h3>Keyword Research for Beginners</h3>
-            <p>A proposed beginner-friendly guide to finding relevant keywords and organizing content ideas.</p>
-          </article>
-          <article class="card">
-            <span class="label">Sample project</span>
-            <h3>On-Page SEO Checklist</h3>
-            <p>A practical checklist concept for reviewing page titles, descriptions, links and content structure.</p>
-          </article>
-        </div>
+  <!-- SKILLS -->
+  <section class="soft">
+    <div class="container">
+      <div class="tag">Skills & Interests</div>
+      <h2>What I Work With</h2>
+
+      <div class="skills">
+        <span>SEO Content Writing</span>
+        <span>Blog Writing</span>
+        <span>Website Copy</span>
+        <span>Keyword Research</span>
+        <span>Competitor Research</span>
+        <span>Search Intent</span>
+        <span>On-Page SEO</span>
+        <span>Content Optimization</span>
+        <span>LinkedIn Branding</span>
+        <span>Content Strategy</span>
+        <span>Thought Leadership</span>
+        <span>Storytelling</span>
+        <span>Social Media Content</span>
+        <span>Digital Marketing</span>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="work">
-      <div class="wrap">
-        <h2>Skills & Interests</h2>
-        <p class="intro">Areas I work on and continue to develop.</p>
-        <div class="skills">
-          <span>SEO Content Writing</span>
-          <span>Blog Writing</span>
-          <span>Keyword Research</span>
-          <span>On-Page SEO</span>
-          <span>Content Strategy</span>
-          <span>Digital Marketing</span>
-          <span>AI Writing Tools</span>
-          <span>Content Optimization</span>
-        </div>
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="tag">Let's Connect</div>
+      <h2>Let's Create Something Meaningful.</h2>
+
+      <p>
+        Need SEO content, clearer website messaging, or a LinkedIn strategy
+        that communicates your expertise? I'd love to learn about your goals.
+        Let's turn your ideas into content that connects with the right people.
+      </p>
+
+      <div class="buttons" style="justify-content:center">
+        <a class="btn primary"
+           href="https://www.linkedin.com/in/shweta-kumari-6899551aa"
+           target="_blank" rel="noopener noreferrer">
+          Connect on LinkedIn ↗
+        </a>
+
+        <a class="btn secondary"
+           href="https://www.linkedin.com/newsletters/write-with-shweta-7489001167566561280/"
+           target="_blank" rel="noopener noreferrer">
+          Read Write With Shweta ↗
+        </a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="contact" class="contact">
-      <div class="wrap">
-        <h2>Have a project in mind?</h2>
-        <p>I'm interested in connecting with businesses, agencies and fellow content creators. Add your preferred contact links below to make it easy for clients to reach you.</p>
-        <div class="buttons" style="justify-content:center">
-          <a class="btn primary" href="mailto:YOUR_EMAIL@example.com">Email Me</a>
-          <a class="btn secondary" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </div>
-      </div>
-    </section>
-  </main>
+</main>
 
-  <footer>
-    <div class="wrap">© 2026 Write With Shweta. Built with care.</div>
-  </footer>
+<footer>
+  <div class="container">
+    <p>© 2026 Write With Shweta. Learn. Write. Grow.</p>
+
+    <p>
+      <a href="https://www.linkedin.com/in/shweta-kumari-6899551aa"
+         target="_blank" rel="noopener noreferrer">
+        LinkedIn Profile
+      </a>
+
+      |
+
+      <a href="https://www.linkedin.com/newsletters/write-with-shweta-7489001167566561280/"
+         target="_blank" rel="noopener noreferrer">
+        LinkedIn Newsletter
+      </a>
+    </p>
+  </div>
+</footer>
+
 </body>
 </html>
